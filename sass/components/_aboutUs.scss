@@ -1,0 +1,132 @@
+.aboutUs {
+  background: #fff;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: -2;
+}
+
+.aboutUs-title {
+  color: #182738;
+
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 20px;
+  // margin-bottom: 40px;
+}
+
+.aboutUs-text {
+  color: rgba(0, 0, 0, 0.7);
+
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+
+  margin-bottom: 51px;
+
+  margin-bottom: 20px;
+}
+
+.aboutUs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // justify-content: space-evenly;
+}
+
+.aboutUs-item_text {
+  color: #000;
+
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-size: 76px;
+  // font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.92px;
+}
+
+.aboutUs-item_textSecond {
+  color: #000;
+
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.aboutUs-list::before {
+  content: '';
+  position: absolute;
+  background-image: url('../../images/aboutAs/image\ 9.png');
+  background-size: cover;
+  width: 188px;
+  height: 359px;
+  left: 0;
+  bottom: 10px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutUs-title {
+    margin-bottom: 30px;
+    width: 539px;
+    margin: 0 auto;
+  }
+  .aboutUs-list {
+    flex-direction: row;
+
+    justify-content: space-evenly;
+  }
+  .aboutUs-text {
+    margin-bottom: 30px;
+    width: 539px;
+    margin: 0 auto;
+  }
+  .aboutUs-item {
+    position: relative;
+    padding-left: 20px;
+  }
+  .aboutUs-item_text {
+    font-size: 56px;
+  }
+
+  .aboutUs-item:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutUs-title {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+
+  .aboutUs-item_text {
+    font-size: 96px;
+  }
+  .aboutUs-text {
+    margin-bottom: 40px;
+  }
+}

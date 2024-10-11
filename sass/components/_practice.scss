@@ -1,0 +1,174 @@
+.practice {
+  // width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f9f7f5;
+  position: relative;
+  // position: relative;
+  // padding-left: 92px;
+  // padding-right: 92px;
+}
+
+.practice-box {
+  position: relative;
+}
+
+.practice-title {
+  color: #182738;
+  font-family: 'Cormorant Garamond';
+  // font-size: 64px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+
+  margin-bottom: 13px;
+}
+
+.practice-text {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-align: center;
+  margin-bottom: 30px;
+  // margin-bottom: 60px;
+}
+
+.practice-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-evenly;
+  // margin-bottom: 83px;
+  gap: 30px;
+}
+
+.practice-item {
+  position: relative;
+}
+
+.practice-img {
+  border: 1px solid #cb935d;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+  width: 310px;
+}
+
+.practice-list_text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #cb935d;
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+
+.practice-box::before {
+  content: '';
+  position: absolute;
+  // display: block;
+  top: 2%;
+  left: 99%;
+  transform: translate(-50%, -50%);
+  background-image: url('../../images/practice/image2.png');
+  background-size: cover; /* Добавляем свойство для масштабирования */
+  width: 137px; /* Пример ширины */
+  height: 146px; /* Пример высоты */
+}
+
+.practice-box::after {
+  content: '';
+  position: absolute;
+  // display: block;
+  top: 100%;
+  left: 1%;
+  transform: translate(-50%, -50%);
+  background-image: url('../../images/practice/image1.png');
+  background-size: cover;
+  width: 137px;
+  height: 146px;
+}
+
+@media screen and (min-width: 768px) {
+  .practice-title {
+    font-size: 44px;
+  }
+  .practice-text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .practice-list {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 83px;
+  }
+  .practice-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .practice-img {
+    width: 210px;
+  }
+  .practice-list_text {
+    font-size: 25px;
+  }
+  .practice::before {
+    top: 1%;
+    left: 90%;
+
+    width: 137px;
+    height: 146px;
+  }
+
+  .practice::after {
+    top: 100%;
+    left: 10%;
+
+    width: 137px;
+    height: 146px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .practice-title {
+    font-size: 64px;
+  }
+  .practice-text {
+    text-align: center;
+    // width: 500px;
+  }
+  .practice-img {
+    width: 310px;
+  }
+  .practice-list_text {
+    font-size: 36px;
+  }
+  .practice-box::before {
+    top: 10%;
+    left: 90%;
+
+    width: 337px;
+    height: 246px;
+  }
+
+  .practice-box::after {
+    top: 105%;
+    left: 5%;
+
+    width: 337px;
+    height: 246px;
+  }
+}

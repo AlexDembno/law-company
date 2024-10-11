@@ -1,0 +1,95 @@
+.header-list {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  // padding: 15px 10px 10px 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  // margin-left: 300px;
+}
+
+.nav {
+  position: relative;
+}
+
+.icon::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  background-image: url('../../images/header/Group\ 1.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+.header-text {
+  color: #fff;
+
+  font-family: 'Cormorant Garamond';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 30px;
+  &:hover {
+    color: #cb935d;
+  }
+}
+
+.header-span {
+  color: #cb935d;
+  font-family: 'Cormorant Garamond';
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    // padding: 27px 103px 27px 97px;
+    // padding: 15px 10px 10px 10px;
+    margin-left: auto;
+  }
+  .header-item:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-list {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    // padding: 27px 103px 27px 97px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    // padding: 15px 10px 10px 10px;
+    // margin-left: auto;
+  }
+  .header-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .header-text {
+    font-size: 24px;
+  }
+
+  .header-span {
+    font-size: 24px;
+  }
+}

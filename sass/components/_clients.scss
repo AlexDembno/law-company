@@ -1,0 +1,135 @@
+.clients {
+  background: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clients-box_title {
+  // margin-right: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients-title {
+  color: #182738;
+
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 20px;
+}
+
+.clients-buttom {
+  color: #fff;
+
+  font-family: 'Cormorant Garamond';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 111px;
+  padding: 10px 10px;
+  background: #cb935d;
+  margin-bottom: 20px;
+  &:hover {
+    color: #cb935d;
+    background: #fff;
+  }
+}
+
+.clients-text {
+  color: #000;
+
+  font-family: Manrope;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+
+  margin-bottom: 25px;
+}
+
+.clients-text_second {
+  color: #000;
+
+  font-family: Manrope;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+
+  margin-bottom: 5px;
+}
+
+.clients-text_third {
+  color: #000;
+
+  font-family: Manrope;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-text {
+    width: 539px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .clients {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .clients-box_title {
+    margin-right: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .clients-title {
+    text-align: start;
+    font-size: 64px;
+
+    margin-bottom: 31px;
+  }
+  .clients-buttom {
+    font-size: 24px;
+    display: flex;
+    width: 211px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .clients-text {
+    text-align: start;
+  }
+
+  .clients-text_second {
+    text-align: start;
+  }
+
+  .clients-text_third {
+    text-align: start;
+  }
+}
