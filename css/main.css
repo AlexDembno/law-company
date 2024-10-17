@@ -37,6 +37,11 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  overflow-x: hidden; /* Отключает горизонтальный скролл */
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
