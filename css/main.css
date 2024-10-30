@@ -575,7 +575,7 @@ body {
 .aboutUs-list::before {
   content: "";
   position: absolute;
-  background-image: url("/law-company/images/header/image.png");
+  background-image: url("/law-company/images/aboutAs/image.png");
   background-size: cover;
   width: 188px;
   height: 359px;
@@ -1433,7 +1433,7 @@ body {
   .mobile-menu-nav::before {
     content: "";
     position: absolute;
-    background-image: url("/law-company/images/header/image.png");
+    background-image: url("/law-company/images/aboutAs/image.png");
     background-size: cover;
     width: 150px;
     height: 250px;
