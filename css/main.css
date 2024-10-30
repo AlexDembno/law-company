@@ -122,7 +122,7 @@ body {
   top: 50%;
   left: 15px;
   transform: translate(-50%, -50%);
-  background-image: url("/law-company/images/header/group.png");
+  background-image: url("/images/header/group.png");
   background-repeat: no-repeat;
   background-size: 22px;
 }
@@ -415,7 +415,7 @@ body {
   top: 1%;
   left: 99%;
   transform: translate(-50%, -50%);
-  background-image: url("/law-company/images/practice/image2.png");
+  background-image: url("/images/practice/image2.png");
   background-size: cover; /* Добавляем свойство для масштабирования */
   width: 137px; /* Пример ширины */
   height: 146px; /* Пример высоты */
@@ -427,7 +427,7 @@ body {
   top: 101%;
   left: 1%;
   transform: translate(-50%, -50%);
-  background-image: url("/law-company/images/practice/image1.png");
+  background-image: url("/images/practice/image1.png");
   background-size: cover;
   width: 137px;
   height: 146px;
@@ -575,7 +575,7 @@ body {
 .aboutUs-list::before {
   content: "";
   position: absolute;
-  background-image: url("/law-company/images/aboutAs/image.png");
+  background-image: url("/images/aboutAs/image.png");
   background-size: cover;
   width: 188px;
   height: 359px;
@@ -1120,7 +1120,7 @@ body {
   position: absolute;
   left: 15px;
   transform: translate(-50%);
-  background-image: url("/law-company/images/header/group.png");
+  background-image: url("/images/header/group.png");
   background-repeat: no-repeat;
   background-size: 22px;
 }
@@ -1433,7 +1433,7 @@ body {
   .mobile-menu-nav::before {
     content: "";
     position: absolute;
-    background-image: url("/law-company/images/aboutAs/image.png");
+    background-image: url("/images/aboutAs/image.png");
     background-size: cover;
     width: 150px;
     height: 250px;
