@@ -1,0 +1,45 @@
+.blogPage-main {
+  background-color: #fff;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blogPage-title {
+  font-family: 'Cormorant Garamond';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: 8px;
+  // width: 690px;
+  // height: 156px;
+  margin-bottom: 30px;
+}
+
+.blogPage-text {
+  font-family: 'Cormorant Garamond';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+
+  padding-bottom: 8px;
+  // width: 690px;
+  // height: 156px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .blogPage-text {
+    font-size: 36px;
+  }
+  .blogPage-title {
+    font-size: 42px;
+  }
+}

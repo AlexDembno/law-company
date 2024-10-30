@@ -25,7 +25,7 @@
 
   text-align: center;
   font-family: Manrope;
-  font-size: 16px;
+  // font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -72,13 +72,14 @@
 .aboutUs-list::before {
   content: '';
   position: absolute;
-  background-image: url('../../images/aboutAs/image\ 9.png');
+  background-image: url('/images/aboutAs/image.png');
   background-size: cover;
   width: 188px;
   height: 359px;
   left: 0;
-  bottom: 10px;
+  bottom: 0;
   z-index: -1;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -96,6 +97,7 @@
     margin-bottom: 30px;
     width: 539px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
   .aboutUs-item {
     position: relative;
@@ -109,7 +111,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -10px;
+    left: 10px;
     display: block;
     width: 1px;
     height: 100%;
@@ -128,5 +130,29 @@
   }
   .aboutUs-text {
     margin-bottom: 40px;
+  }
+
+  .aboutUs-item:not(:first-child)::before {
+    left: -12px;
+    // right: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutUs-text {
+    font-size: 26px;
+    width: 729px;
+  }
+
+  // .aboutUs-item:not(:first-child)::before {
+  //   // left: -30px;
+  //   // right: 5px;
+  // }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutUs-item:not(:first-child)::before {
+    left: -55px;
+    // right: 5px;
   }
 }

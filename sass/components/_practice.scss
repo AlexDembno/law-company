@@ -1,9 +1,6 @@
 .practice {
   // width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   background: #f9f7f5;
-  position: relative;
   // position: relative;
   // padding-left: 92px;
   // padding-right: 92px;
@@ -29,7 +26,7 @@
 .practice-text {
   color: rgba(0, 0, 0, 0.7);
   font-family: Manrope;
-  font-size: 14px;
+  // font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -78,10 +75,10 @@
   content: '';
   position: absolute;
   // display: block;
-  top: 2%;
+  top: 1%;
   left: 99%;
   transform: translate(-50%, -50%);
-  background-image: url('../../images/practice/image2.png');
+  background-image: url('/images/practice/image2.png');
   background-size: cover; /* Добавляем свойство для масштабирования */
   width: 137px; /* Пример ширины */
   height: 146px; /* Пример высоты */
@@ -91,10 +88,10 @@
   content: '';
   position: absolute;
   // display: block;
-  top: 100%;
+  top: 101%;
   left: 1%;
   transform: translate(-50%, -50%);
-  background-image: url('../../images/practice/image1.png');
+  background-image: url('/images/practice/image1.png');
   background-size: cover;
   width: 137px;
   height: 146px;
@@ -112,7 +109,6 @@
   .practice-list {
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 83px;
   }
   .practice-item {
     margin-left: auto;
@@ -125,17 +121,17 @@
   .practice-list_text {
     font-size: 25px;
   }
-  .practice::before {
-    top: 1%;
+  .practice-box::before {
+    top: 2%;
     left: 90%;
 
     width: 137px;
     height: 146px;
   }
 
-  .practice::after {
-    top: 100%;
-    left: 10%;
+  .practice-box::after {
+    top: 105%;
+    left: 4%;
 
     width: 137px;
     height: 146px;
@@ -145,27 +141,55 @@
 @media screen and (min-width: 1024px) {
   .practice-title {
     font-size: 64px;
+    margin-bottom: 20px;
   }
+
+  .practice-list {
+    margin-bottom: 83px;
+  }
+
   .practice-text {
     text-align: center;
+    font-size: 24px;
     // width: 500px;
   }
+
   .practice-img {
     width: 310px;
   }
+
   .practice-list_text {
     font-size: 36px;
   }
+
   .practice-box::before {
     top: 10%;
-    left: 90%;
+    left: 95%;
 
     width: 337px;
     height: 246px;
   }
 
   .practice-box::after {
-    top: 105%;
+    top: 104%;
+    left: 5%;
+
+    width: 337px;
+    height: 246px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .practice-box::before {
+    top: 6%;
+    left: 95%;
+
+    width: 337px;
+    height: 246px;
+  }
+
+  .practice-box::after {
+    top: 108%;
     left: 5%;
 
     width: 337px;

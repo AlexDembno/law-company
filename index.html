@@ -14,35 +14,114 @@
   <body>
     <header id="home" class="header container">
       <nav class="nav">
-        <a href="#home" class="header-text icon" href=""
-          >Law <span class="header-span">Company 911</span></a
+        <a href="#home" class="header-title icon" id="company"
+          >Юридична компанія 911</a
         >
         <ul class="header-list">
+          <!-- <li class="header-item">
+            <a class="header-text" href="#home" id="homeHeader">Додому</a>
+          </li> -->
+
           <li class="header-item">
-            <a class="header-text" href="#home">Home</a>
+            <a class="header-text" href="#about" id="aboutHeader">Про нас</a>
           </li>
 
           <li class="header-item">
-            <a class="header-text" href="#about">About Us</a>
+            <a class="header-text" href="#practice" id="practiceHeader"
+              >Область практики</a
+            >
           </li>
 
           <li class="header-item">
-            <a class="header-text" href="#practice">Practice Area</a>
+            <a class="header-text" href="#blog" id="blogHeader">Блог</a>
           </li>
 
           <li class="header-item">
-            <a class="header-text" href="#blog">Blog</a>
-          </li>
-
-          <li class="header-item">
-            <a class="header-text" href="#contact">Contact us</a>
+            <a class="header-text" href="#contact" id="contactHeader"
+              >Зв'яжіться з нами</a
+            >
           </li>
         </ul>
+        <!-- <button class="mobile-menu-open" type="button" data-menu-open>
+          <img
+            class="icon-burger"
+            src="./images/header/burger-menu-svgrepo-com.svg"
+            width="40"
+            height="40"
+          />
+        </button> -->
+        <button class="mobile-menu-open" type="button" data-menu-open>
+          <svg
+            class="icon-burger"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6h18M3 12h18m-18 6h18"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
       </nav>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <ul class="mobile-menu-nav">
+            <button class="mobile-menu-close" type="button" data-menu-close>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+                    fill="#cb935d"
+                  ></path>
+                </g>
+              </svg>
+            </button>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="#home" id="home">Додому</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="#about" id="about"
+                >Про нас</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="#practice" id="practice"
+                >Область практики</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="#blog" id="blog">Блог</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="#contact" id="contact"
+                >Зв'яжіться з нами</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero container">
-        <p class="text-top">GET FIERCE LEGAL SUPPORT</p>
+        <p class="text-top" id="get">ОТРИМАЙТЕ ЮРИДИЧНУ ПІДТРИМКУ</p>
         <img
           class="img-justice"
           src="./images/hero/pngwing 1.png"
@@ -53,24 +132,27 @@
           src="./images/hero/Daco_406517 1.png"
           alt="daco"
         />
-        <h1 class="hero-title">
-          We Provide The Best Possible
-          <span class="title-span">Legal Services</span>
+        <h1 class="hero-title" id="provide">
+          Ми надаємо найкращі
+          <span class="title-span" id="service">Юридичні послуги</span>
         </h1>
-        <p class="text-bottom">
-          Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat orci
-          nulla pellentesque dignissim enim. Enim nunc faucibus a pellentesque
-          sit amet porttitor eget dolor.
+        <p class="text-bottom" id="headtext">
+          Наша команда досвідчених адвокатів та правознавців готова допомогти
+          вам вирішити найскладніші юридичні питання. Ми пропонуємо
+          індивідуальний підхід до кожного клієнта та забезпечуємо повну
+          конфіденційність.
         </p>
-        <button class="hero-buttom" type="button" data-buton>Contact Us</button>
+        <button class="hero-buttom" type="button" data-buton id="button">
+          Зв'яжіться з нами
+        </button>
       </section>
       <section id="practice" class="section practice">
-        <div class="practice-box">
-          <h3 class="practice-title">Our Practice Areas</h3>
-          <p class="practice-text">
-            Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat orci
-            nulla pellentesque dignissim enim. Enim nunc faucibus a pellentesque
-            sit amet porttitor eget dolor.
+        <div class="practice-box container">
+          <h3 class="practice-title" id="practice">Наші сфери діяльності</h3>
+          <p class="practice-text" id="practicetext">
+            Ми надаємо професійну допомогу в різних галузях права, забезпечуючи
+            захист ваших прав та інтересів. Наші адвокати мають багаторічний
+            досвід і готові допомогти вам у будь-якій юридичній ситуації.
           </p>
           <ul class="practice-list">
             <li class="practice-item">
@@ -79,7 +161,7 @@
                 src="./images/practice/Rectangle 2.png"
                 alt="Criminal Law"
               />
-              <p class="practice-list_text">Criminal Law</p>
+              <p class="practice-list_text" id="criminal">Кримінальне право</p>
             </li>
             <li class="practice-item">
               <img
@@ -87,7 +169,7 @@
                 src="./images/practice/Rectangle 3.png"
                 alt="Civil Law"
               />
-              <p class="practice-list_text">Civil Law</p>
+              <p class="practice-list_text" id="civil">Цивільне право</p>
             </li>
             <li class="practice-item">
               <img
@@ -95,7 +177,7 @@
                 src="./images/practice/Rectangle 4.png"
                 alt="Business law"
               />
-              <p class="practice-list_text">Business law</p>
+              <p class="practice-list_text" id="business">Господарське право</p>
             </li>
             <!-- <li class="practice-item">
             <img src="./images/practice/Rectangle 5.png" alt="Tax law" />
@@ -105,225 +187,386 @@
         </div>
       </section>
       <section id="about" class="section aboutUs">
-        <h3 class="aboutUs-title">We’re Advocates for Justice and Right</h3>
-        <p class="aboutUs-text">
-          Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat orci
-          nulla pellentesque dignissim enim. Enim nunc faucibus a pellentesque
-          sit amet porttitor eget dolor.
-        </p>
-        <ul class="aboutUs-list">
-          <li class="aboutUs-item">
-            <p class="aboutUs-item_text">100%</p>
-            <p class="aboutUs-item_textSecond">Cases Solved</p>
-          </li>
-          <li class="aboutUs-item">
-            <p class="aboutUs-item_text">50+</p>
-            <p class="aboutUs-item_textSecond">Happy Clients</p>
-          </li>
-          <li class="aboutUs-item">
-            <p class="aboutUs-item_text">200</p>
-            <p class="aboutUs-item_textSecond">Loreum Ipsum</p>
-          </li>
-          <li class="aboutUs-item">
-            <p class="aboutUs-item_text">150</p>
-            <p class="aboutUs-item_textSecond">Working Hourss</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h3 class="aboutUs-title" id="advocates">
+            Ми прихильники справедливості та права
+          </h3>
+          <p class="aboutUs-text" id="believe">
+            Ми віримо, що справедливість і право повинні бути доступними
+            кожному. Наша команда працює над тим, щоб забезпечити ефективний
+            захист інтересів наших клієнтів.
+          </p>
+          <ul class="aboutUs-list">
+            <li class="aboutUs-item">
+              <p class="aboutUs-item_text">95%</p>
+              <p class="aboutUs-item_textSecond" id="solved">Вирішених справ</p>
+            </li>
+            <li class="aboutUs-item">
+              <p class="aboutUs-item_text">1000+</p>
+              <p class="aboutUs-item_textSecond" id="happy">
+                Консультувань щороку
+              </p>
+            </li>
+            <li class="aboutUs-item">
+              <p class="aboutUs-item_text">10</p>
+              <p class="aboutUs-item_textSecond" id="years">Pоків досвіду</p>
+            </li>
+            <li class="aboutUs-item">
+              <p class="aboutUs-item_text">50+</p>
+              <p class="aboutUs-item_textSecond" id="consultations">
+                Щасливі клієнти
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section experience">
+      <section class="section experience container">
         <img
           class="experience-img"
           src="./images/experience/Rectangle 12.png"
           alt="law"
         />
         <div class="experience-box">
-          <h3 class="experience-title">
-            Let Our Experience
-            <span class="experience-span">Be Your Guide</span>
+          <h3 class="experience-title" id="let">
+            Нехай наш досвід
+            <span class="experience-span" id="guide"
+              >стане вашим путівником</span
+            >
           </h3>
-          <p class="experience-text">
-            At Judicioworks Advocates and Associates, we bring years of
-            experience across various practice areas, ensuring you receive
-            informed, effective, and personalized legal solutions. Our seasoned
-            team, led by Founder Rishabh Malhotra (Advocate), is dedicated to
-            understanding your unique needs and providing tailored advice and
-            representation. Trust in our experience to navigate the complexities
-            of the legal landscape and advocate fiercely on your behalf.
+          <p class="experience-text" id="experience1">
+            У світі юридичних складнощів важливо мати надійного партнера, який
+            знає, як досягти успіху. Наша команда фахівців готова поділитися
+            своїм багаторічним досвідом, щоб ви могли зосередитися на своїх
+            цілях, а не на юридичних перешкодах.
           </p>
-          <button class="experience-buttom" type="button" data-buton>
-            Contact Us
+          <p class="experience-text" id="experience2">Ми пропонуємо:</p>
+          <p class="experience-text" id="experience3">
+            Індивідуальний підхід: Кожен клієнт унікальний, тому ми розробляємо
+            персоналізовані рішення, що відповідають вашим потребам.
+          </p>
+          <p class="experience-text" id="experience4">
+            Глибокі знання: Наша команда володіє глибокими знаннями у різних
+            галузях права, що дозволяє нам ефективно вирішувати навіть
+            найскладніші ситуації.
+          </p>
+          <p class="experience-text" id="experience5">
+            Прозорість і довіра: Ми вважаємо, що відкритість і чесність є
+            ключовими елементами у відносинах з клієнтами. Ви завжди будете в
+            курсі ходу справи та отримуватимете чітку інформацію.
+          </p>
+          <p class="experience-text" id="experience6">
+            Підтримка на кожному етапі: Незалежно від того, чи потребуєте ви
+            консультації, представництва в суді чи допомоги у веденні бізнесу,
+            ми будемо з вами на кожному кроці.
+          </p>
+          <p class="experience-text" id="experience7">
+            Обираючи нашу фірму, ви отримуєте не тільки юридичну підтримку, а й
+            надійного партнера, готового боротися за ваші інтереси.
+          </p>
+          <button
+            class="experience-buttom"
+            type="button"
+            data-buton
+            id="button"
+          >
+            Зв'яжіться з нами
           </button>
         </div>
       </section>
       <section class="section clients">
-        <div class="clients-box_title">
-          <h3 class="clients-title">What Our Clients Are Saying</h3>
-          <button class="clients-buttom" type="button" data-buton>
-            Contact Us
-          </button>
-        </div>
-        <div class="clients-text">
-          <p class="clients-text">
-            At Judicioworks Advocates and Associates, we bring years of
-            experience across various practice areas, ensuring you receive
-            informed, effective, and personalized legal solutions. Our seasoned
-            team, led by Founder Rishabh Malhotra (Advocate), is dedicated to
-            understanding your unique needs and providing tailored advice and
-            representation. Trust in our experience to navigate the complexities
-            of the legal landscape and advocate fiercely on your behalf.
-          </p>
-          <p class="clients-text_second">Ritesh</p>
-          <p class="clients-text_third">CEO, Loreum Ipsum</p>
+        <div class="container clients-box">
+          <div class="clients-box_title">
+            <h3 class="clients-title" id="clients">Що говорять наші клієнти</h3>
+            <button class="clients-buttom" type="button" data-buton id="button">
+              Зв'яжіться з нами
+            </button>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Величезна подяка команді за професіоналізм і увагу до
+                    деталей! Вони допомогли розібратися з моїми бізнесовими
+                    питаннями, оформили всі документи та захистили мої інтереси.
+                    З такою підтримкою почуваєшся впевнено в будь-яких справах.
+                  </p>
+                  <p class="clients-text_second">Олена П., підприємець</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Я потрапив у складну ситуацію і потребував термінової
+                    юридичної допомоги. Фахівці фірми дуже швидко відреагували,
+                    детально пояснили всі кроки та допомогли досягти позитивного
+                    результату. Рекомендую їх за оперативність і чуйність!
+                  </p>
+                  <p class="clients-text_second">Андрій С., приватний клієнт</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Ми співпрацюємо з цією фірмою вже більше трьох років. Вони
+                    завжди готові надати якісну консультацію та підготувати
+                    необхідні документи для нашого бізнесу. Відчувається, що
+                    працюєш з надійними професіоналами, які дійсно розуміють
+                    твої потреби.
+                  </p>
+                  <p class="clients-text_second">Марія І., керівник компанії</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Мене вразила якість обслуговування та швидкість реакції на
+                    мої запити. Фахівці цієї фірми чітко пояснили всі нюанси і
+                    дали зрозумілі рекомендації. Відчутно, що їхня мета —
+                    допомогти клієнту знайти найкраще рішення, а не просто
+                    надати послугу.
+                  </p>
+                  <p class="clients-text_second">
+                    Іван К., власник малого бізнесу
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Звернулась за допомогою у вирішенні сімейних юридичних
+                    питань. Вони не тільки професійно підійшли до справи, але й
+                    підтримали емоційно, що було дуже важливо для мене в той
+                    момент. Дуже вдячна за таке чуйне ставлення!
+                  </p>
+                  <p class="clients-text_second">
+                    Світлана М., приватний клієнт
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Працювали з фірмою над створенням та коригуванням внутрішніх
+                    юридичних документів компанії. Результат перевершив
+                    очікування — отримали повністю відповідні вимогам документи.
+                    Це дає нам упевненість у правовій безпеці компанії.
+                  </p>
+                  <p class="clients-text_second">
+                    Володимир Т., керівник відділу HR
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-wrapper">
+                  <p class="clients-text">
+                    Завдяки цій команді мені вдалося швидко вирішити
+                    господарський спір без зайвих судових розглядів. Спеціалісти
+                    надали цінні рекомендації та дійсно допомогли уникнути
+                    великих витрат. Дуже рекомендую!
+                  </p>
+                  <p class="clients-text_second">Наталія Г., підприємець</p>
+                </div>
+              </div>
+            </div>
+            <!-- Кнопки навигации -->
+            <!-- <button class="swiper-button-next"></button>
+          <button class="swiper-button-prev"></button> -->
+          </div>
         </div>
       </section>
 
-      <section id="blog" class="section blog">
-        <h3 class="blog-title">Blog Posts</h3>
+      <section id="blog" class="section blog container">
+        <h3 class="blog-title" id="materials">Корисні матеріали</h3>
         <ul class="blog-list">
-          <li class="blog-item">
-            <img
-              class="blog-img"
-              src="./images/blog/Rectangle 13.png"
-              alt="law blog"
-            />
-            <p class="blog-text">Loreum Ipsum for blog tile</p>
-          </li>
-          <li class="blog-item">
-            <img
-              class="blog-img"
-              src="./images/blog/Rectangle 14.png"
-              alt="law blog"
-            />
-            <p class="blog-text">
-              Legal system and loreum ipsum to try two lines heading
+          <li class="blog-item blog-first">
+            <div class="blog-wrapper">
+              <img
+                class="blog-img"
+                src="./images/blog/Rectangle 13.png"
+                alt="law blog"
+              />
+              <div class="article">
+                <p class="article-text">Читати статтю</p>
+              </div>
+            </div>
+            <p class="blog-text" id="materialsFirst">
+              Як обрати адвоката: ключові моменти для клієнтів
             </p>
           </li>
-          <li class="blog-item">
-            <img
-              class="blog-img"
-              src="./images/blog/Rectangle 15.png"
-              alt="law blog"
-            />
-            <p class="blog-text">
-              Legal system and loreum ipsum to try two lines heading
+          <li class="blog-item blog-second">
+            <div class="blog-wrapper">
+              <img
+                class="blog-img"
+                src="./images/blog/Rectangle 14.png"
+                alt="law blog"
+              />
+              <div class="article">
+                <p class="article-text">Читати статтю</p>
+              </div>
+            </div>
+
+            <p class="blog-text" id="materialsSecond">
+              Права та обов'язки працівників і роботодавців: що потрібно знати
+              про трудові договори
+            </p>
+          </li>
+          <li class="blog-item blog-third">
+            <div class="blog-wrapper">
+              <img
+                class="blog-img"
+                src="./images/blog/Rectangle 15.png"
+                alt="law blog"
+              />
+              <div class="article">
+                <p class="article-text">Читати статтю</p>
+              </div>
+            </div>
+            <p class="blog-text" id="materialsTherd">
+              Що робити у випадку сімейного спору: збереження прав у шлюбі та
+              при розлученні
             </p>
           </li>
         </ul>
       </section>
 
       <section class="section gallery">
-        <h3 class="gallery-title">Gallery</h3>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/16acb6866eb85744dd1fe0b7c7108b01.jpg"
-                alt="law gallery"
-              />
+        <div class="container">
+          <h3 class="gallery-title" id="gallery">Галерея</h3>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/16acb6866eb85744dd1fe0b7c7108b01.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/205c93c58150b5b153e410ea78dce699.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/2600ead46c1c3329e4e6da210a462d92.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/ai-generated-8511918_1280.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/ai-generated-8679700_1280.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/courtroom-898931_1280.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/gavel-7540203_1280.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/hammer-802301_1280.jpg"
+                  alt="law gallery"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/right-4703934_1280.jpg"
+                  alt="law gallery"
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/205c93c58150b5b153e410ea78dce699.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/2600ead46c1c3329e4e6da210a462d92.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/ai-generated-8511918_1280.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/ai-generated-8679700_1280.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/courtroom-898931_1280.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/gavel-7540203_1280.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/hammer-802301_1280.jpg"
-                alt="law gallery"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/gallery/right-4703934_1280.jpg"
-                alt="law gallery"
-              />
-            </div>
-          </div>
-          <!-- Кнопки навигации -->
-          <!-- <button class="swiper-button-next"></button>
+            <!-- Кнопки навигации -->
+            <!-- <button class="swiper-button-next"></button>
           <button class="swiper-button-prev"></button> -->
+          </div>
         </div>
       </section>
     </main>
-    <footer id="contact" class="section footer">
+    <footer id="contact" class="section footer container">
       <div class="footer-box">
-        <a href="#home" class="footer-title footer-icon" href=""
-          >Law <span class="footer-span">Company 911</span></a
+        <a href="#home" class="footer-title footer-icon" id="company"
+          >Юридична компанія 911</a
         >
-        <p class="footer-text">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour.
+        <p class="footer-text" id="footerText">
+          Наша команда готова відповісти на ваші запитання та надати професійну
+          допомогу в будь-який зручний для вас час. Звертайтеся до нас
+          телефоном, електронною поштою або завітайте до нашого офісу для
+          особистої консультації. Ми завжди на вашому боці та прагнемо знайти
+          найкращі рішення для вас.
         </p>
       </div>
-      <div>
+      <!-- <div>
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-text" href="#home">Home</a>
+            <a class="footer-text" href="#home" id="homeHeader">Додому</a>
           </li>
           <li class="footer-item">
-            <a class="footer-text" href="#about">About Us</a>
+            <a class="footer-text" href="#about" id="aboutHeader">Про нас</a>
           </li>
           <li class="footer-item">
-            <a class="footer-text" href="#practice">Practice Area</a>
+            <a class="footer-text" href="#practice" id="practiceHeader"
+              >Область практики</a
+            >
           </li>
           <li class="footer-item">
-            <a class="footer-text" href="#blog">Blog</a>
+            <a class="footer-text" href="#blog" id="blogHeader">Блог</a>
           </li>
           <li class="footer-item">
-            <a class="footer-text" href="#contact">Contact us</a>
+            <a class="footer-text" href="#contact" id="contactHeader"
+              >Зв'яжіться з нами</a
+            >
           </li>
         </ul>
-      </div>
+      </div> -->
       <div>
-        <ul>
-          <li><h4 class="footer-text">Contact Now</h4></li>
-          <li class="footer-item">
-            <p class="footer-text">
-              555 4th 5t NW, Washington DC 20530, United States
+        <ul class="footer-list">
+          <li>
+            <p class="footer-title_second" id="contactFooter">
+              Зв'язатися зараз
             </p>
           </li>
           <li class="footer-item">
-            <p class="footer-text">+88 01750 000 000</p>
+            <p class="footer-text" id="adress">
+              Бізнес-центр Приморський, вул. Велика Арнаутська, 17, Одеса,
+              Україна
+            </p>
           </li>
           <li class="footer-item">
-            <p class="footer-text">info@gmail.com</p>
+            <p class="footer-text">+38 097 111 11 111</p>
           </li>
-          <!-- <li>
-            <button class="hero-buttom" type="button">Contact Us</button>
-          </li> -->
+          <li class="footer-item">
+            <p class="footer-text">lawcompany911@gmail.com</p>
+          </li>
+          <li class="footer-item">
+            <button class="footer-buttom" type="button" data-buton id="button">
+              Зв'яжіться з нами
+            </button>
+          </li>
         </ul>
       </div>
     </footer>
@@ -334,18 +577,21 @@
         <button class="modal-close" type="button" data-modal-close>X</button>
         <div>
           <ul class="form-list">
-            <li><h4 class="form-title">Contact Now</h4></li>
+            <!-- <li>
+              <h4 class="form-title" id="contactFooter">Зв'язатися зараз</h4>
+            </li>
             <li class="form-item">
-              <p class="form-text">
-                555 4th 5t NW, Washington DC 20530, United States
+              <p class="form-text" id="adress">
+                Бізнес-центр Приморський, вул. Велика Арнаутська, 17, Одеса,
+                Україна
               </p>
             </li>
             <li class="form-item">
-              <p class="form-text">+88 01750 000 000</p>
+              <p class="form-text">+38 097 111 11 111</p>
             </li>
             <li class="form-item">
-              <p class="form-text">info@gmail.com</p>
-            </li>
+              <p class="form-text">lawcompany911@gmail.com</p>
+            </li> -->
           </ul>
         </div>
         <!-- <p class="form-title">Оставьте свои данные, мы вам перезвоним</p> -->
@@ -414,6 +660,8 @@
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/form.js" type="module"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/blogModal.js" type="module"></script>
+    <script src="./js/swiper.js" type="module"></script>
   </body>
 </html>

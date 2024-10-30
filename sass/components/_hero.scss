@@ -59,7 +59,7 @@
   color: #fff;
 
   font-family: Manrope;
-  font-size: 16px;
+  // font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -74,14 +74,15 @@
   color: #fff;
 
   font-family: 'Cormorant Garamond';
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 5%;
   //   display: flex;
-  width: 111px;
+  width: 170px;
   padding: 10px 10px;
   //   justify-content: center;
   //   align-items: center;
@@ -97,24 +98,24 @@
   .hero {
     position: relative;
   }
-  .hero-title,
-  .text-bottom {
+  .hero-title {
     width: 300px;
   }
 
   .img-justice {
     display: block;
     position: absolute;
-    top: 54%;
+    top: 60%;
     left: 70%;
     transform: translate(-50%, -50%);
     z-index: -1;
     width: 300px;
   }
+
   .img-daco {
     display: block;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 80%;
     transform: translate(-50%, -50%);
     z-index: -2;
@@ -142,6 +143,7 @@
 
   .text-bottom {
     width: 536px;
+    font-size: 24px;
   }
 
   .hero-buttom {
@@ -155,12 +157,11 @@
   }
 
   .img-justice {
-    top: 53%;
+    top: 62%;
     left: 90%;
     width: 446px;
   }
   .img-daco {
-    top: 53%;
     left: 100%;
     width: 373px;
   }

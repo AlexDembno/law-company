@@ -28,13 +28,14 @@
   color: #fff;
 
   font-family: 'Cormorant Garamond';
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 111px;
+  border-radius: 5%;
+  width: 170px;
   padding: 10px 10px;
   background: #cb935d;
   margin-bottom: 20px;
@@ -54,7 +55,6 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.4px;
-
   margin-bottom: 25px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .clients {
+  .clients-box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,7 +110,7 @@
     text-align: start;
     font-size: 64px;
 
-    margin-bottom: 31px;
+    margin-bottom: 24px;
   }
   .clients-buttom {
     font-size: 24px;
@@ -121,15 +121,19 @@
     align-items: center;
     gap: 10px;
   }
+
   .clients-text {
     text-align: start;
+    font-size: 24px;
   }
 
   .clients-text_second {
-    text-align: start;
+    font-size: 24px;
   }
+}
 
-  .clients-text_third {
-    text-align: start;
-  }
+.clients-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
 }

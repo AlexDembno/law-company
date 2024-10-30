@@ -3,20 +3,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .footer-title {
   color: #fff;
-
   font-family: 'Cormorant Garamond';
-  text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 30px;
+  margin-bottom: 20px;
+  &:hover {
+    color: #cb935d;
+  }
+}
+
+.footer-title_second {
+  color: #fff;
+
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   margin-bottom: 20px;
   &:hover {
     color: #cb935d;
@@ -40,12 +51,12 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 7%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  background-image: url('../../images/header/Group\ 1.png');
+  // top: 6%;
+  left: 15px;
+  transform: translate(-50%);
+  background-image: url('/images/header/group.png');
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 22px;
 }
 
 .footer-text {
@@ -53,7 +64,7 @@
 
   font-family: Manrope;
   text-align: center;
-  font-size: 16px;
+  // font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
@@ -61,10 +72,14 @@
 }
 
 .footer > div {
-  width: 259px;
+  width: 280px;
 }
 
 .footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -79,8 +94,64 @@
   //   margin-left: 45px;
 }
 
+.footer-buttom {
+  color: #fff;
+
+  font-family: 'Cormorant Garamond';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 5%;
+  width: 170px;
+  padding: 10px 10px;
+  background: #cb935d;
+  &:hover {
+    color: #cb935d;
+    background: #fff;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .footer-list {
+    margin-top: 0px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+
+  // .footer-icon::before {
+  //   // top: 3%;
+  // }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .footer-buttom {
+    font-size: 24px;
+    display: flex;
+    width: 211px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-text {
+    font-size: 20px;
   }
 }

@@ -184,15 +184,55 @@
   letter-spacing: -0.48px;
 
   //   display: flex;
-  width: 211px;
-  padding: 15px 30px;
-  //   justify-content: center;
-  //   align-items: center;
-  //   gap: 10px;
+  width: 50px;
+  // padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   background: #cb935d;
   &:hover {
     color: #cb935d;
     background: #fff;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-title {
+    font-size: 26px;
+  }
+
+  .form-text {
+    font-size: 22px;
+  }
+
+  .form-item {
+    margin-bottom: 10px;
+  }
+
+  .form-item:last-child {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-title {
+    font-size: 32px;
+  }
+
+  .form-text {
+    font-size: 27px;
+  }
+
+  .button {
+    font-size: 32px;
+  }
+  .form-list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form-item {
+    margin-bottom: 15px;
   }
 }
