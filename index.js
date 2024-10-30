@@ -11,7 +11,7 @@ export const translationsEU = {
   headtext:
     'Our team of experienced lawyers and legal experts is ready to help you to solve the most difficult legal issues. We offer individual approach to each client and provide full privacy',
   button: 'Contact us',
-  practice: 'Our Practice Areas',
+  practiceAreas: 'Our Practice Areas',
   practicetext:
     'We provide professional assistance in various fields of law, ensuring the protection of your rights and interests. Our lawyers have many years of experience and are ready to help you in any legal situation.',
   criminal: 'Criminal Law',

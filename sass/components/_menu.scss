@@ -2,7 +2,7 @@
   .mobile-menu__container {
     position: relative;
 
-    padding: 15px;
+    padding: 25px;
     // height: 100%;
   }
 
@@ -17,7 +17,7 @@
   .mobile-menu-nav::before {
     content: '';
     position: absolute;
-    background-image: url('/images/aboutAs/image.png');
+    background-image: url('./images/aboutAs/image.png');
     background-size: cover;
     width: 150px;
     height: 250px;
