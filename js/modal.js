@@ -32,6 +32,74 @@
     });
   });
 
+  // refs.openModalBtns.forEach(btn => {
+  //   btn.addEventListener('click', () => {
+  //     refs.modal.classList.toggle('is-hidden');
+  //     const markup = `<form class="form">
+  //       <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+  //         <label class="form-label">
+  //           <span class="form-text">Имя</span>
+  //           <span class="form-wrapper">
+  //             <input
+  //               class="form-input"
+  //               type="text"
+  //               name="user_name"
+  //               pattern="[a-zA-Zа-яА-Я]+"
+  //               minlength="2"
+  //               autofocus
+  //             />
+  //           </span>
+  //         </label>
+  //         <label class="form-label">
+  //           <span class="form-text">Телефон</span>
+  //           <span class="form-wrapper">
+  //             <input
+  //               class="form-input"
+  //               type="tel"
+  //               name="user_phone"
+  //               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+  //               title="xxx-xxx-xx-xx"
+  //             />
+  //           </span>
+  //         </label>
+  //         <label class="form-label">
+  //           <span class="form-text">Почта</span>
+  //           <span class="form-wrapper">
+  //             <input class="form-input" type="email" name="user_email" />
+  //           </span>
+  //         </label>
+  //         <label class="form-label">
+  //           <span class="form-text">Комментарий</span>
+  //           <textarea
+  //             class="form-comment"
+  //             name="user_comment"
+  //             placeholder="Введите текст"
+  //           ></textarea>
+  //         </label>
+
+  //         <span class="span">
+  //           <label class="form-check">
+  //             <input
+  //               class="form-check_input"
+  //               type="checkbox"
+  //               name="user-agree"
+  //             />
+  //             <span class="form-check_nocheck"></span>
+  //             <span class="form-check_text"
+  //               >Соглашаюсь с рассылкой и принимаю
+  //               <a href="#">Условия договора</a>
+  //             </span>
+  //           </label>
+  //         </span>
+
+  //         <div class="form-send">
+  //           <button class="form-button" type="submit">Отправить</button>
+  //         </div>
+  //       </form>`;
+  //     refs.list.insertAdjacentHTML('beforeend', markup);
+  //   });
+  // });
+
   document.querySelectorAll('.blog-item').forEach((item, index) => {
     item.addEventListener('click', () => {
       let markup = '';

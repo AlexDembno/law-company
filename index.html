@@ -23,13 +23,13 @@
           </li> -->
 
           <li class="header-item">
-            <a class="header-text" href="#about" id="aboutHeader">Про нас</a>
-          </li>
-
-          <li class="header-item">
             <a class="header-text" href="#practice" id="practiceHeader"
               >Область практики</a
             >
+          </li>
+
+          <li class="header-item">
+            <a class="header-text" href="#about" id="aboutHeader">Про нас</a>
           </li>
 
           <li class="header-item">
@@ -100,7 +100,11 @@
               >
             </li> -->
             <li class="mobile-menu-nav__item">
-              <a class="mobile-menu-nav__link" href="#about" id="aboutHeader"
+              <a
+                class="mobile-menu-nav__link"
+                href="#about"
+                id="aboutHeader"
+                menu-close
                 >Про нас</a
               >
             </li>
@@ -109,11 +113,16 @@
                 class="mobile-menu-nav__link"
                 href="#practice"
                 id="practiceHeader"
+                menu-close
                 >Область практики</a
               >
             </li>
             <li class="mobile-menu-nav__item">
-              <a class="mobile-menu-nav__link" href="#blog" id="blogHeader"
+              <a
+                class="mobile-menu-nav__link"
+                href="#blog"
+                id="blogHeader"
+                menu-close
                 >Блог</a
               >
             </li>
@@ -122,6 +131,7 @@
                 class="mobile-menu-nav__link"
                 href="#contact"
                 id="contactHeader"
+                menu-close
                 >Зв'яжіться з нами</a
               >
             </li>
@@ -589,7 +599,7 @@
         <button class="modal-close" type="button" data-modal-close>X</button>
         <div>
           <ul class="form-list">
-            <!-- <li>
+          <!-- <li>
               <h4 class="form-title" id="contactFooter">Зв'язатися зараз</h4>
             </li>
             <li class="form-item">
@@ -604,7 +614,7 @@
             <li class="form-item">
               <p class="form-text">lawcompany911@gmail.com</p>
             </li> -->
-          </ul>
+          <!-- </ul> -->
         </div>
         <!-- <p class="form-title">Оставьте свои данные, мы вам перезвоним</p> -->
         <!-- <form class="form">
@@ -646,9 +656,9 @@
               name="user_comment"
               placeholder="Введите текст"
             ></textarea>
-          </label> -->
+          </label>
 
-        <!-- <span class="span">
+          <span class="span">
             <label class="form-check">
               <input
                 class="form-check_input"
@@ -661,12 +671,12 @@
                 <a href="#">Условия договора</a>
               </span>
             </label>
-          </span> -->
+          </span>
 
-        <!-- <div class="form-send">
+          <div class="form-send">
             <button class="button" type="submit">Отправить</button>
-          </div> -->
-        <!-- </form> -->
+          </div>
+        </form> -->
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>

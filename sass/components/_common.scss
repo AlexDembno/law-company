@@ -39,3 +39,7 @@ html,
 body {
   overflow-x: hidden; /* Отключает горизонтальный скролл */
 }
+
+html {
+  scroll-behavior: smooth;
+}

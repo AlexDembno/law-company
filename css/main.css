@@ -42,6 +42,10 @@ body {
   overflow-x: hidden; /* Отключает горизонтальный скролл */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -1438,7 +1442,7 @@ body {
     width: 150px;
     height: 250px;
     left: 0;
-    bottom: 10px;
+    bottom: 0;
     z-index: -1;
   }
   .mobile-menu {
