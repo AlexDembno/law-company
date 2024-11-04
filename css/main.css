@@ -139,8 +139,9 @@ html {
   font-weight: 400;
   line-height: normal;
   margin-left: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-title:hover {
+.header-title:hover, .header-title:focus {
   color: #cb935d;
 }
 
@@ -152,8 +153,9 @@ html {
   font-weight: 400;
   line-height: normal;
   margin-left: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-text:hover {
+.header-text:hover, .header-text:focus {
   color: #cb935d;
 }
 
@@ -164,6 +166,7 @@ html {
   font-style: italic;
   font-weight: 600;
   line-height: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-span:hover {
   color: #fff;
@@ -276,13 +279,15 @@ html {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 5%;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 170px;
   padding: 10px 10px;
-  background: #cb935d;
+  background-color: #cb935d;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-buttom:hover {
+.hero-buttom:hover, .hero-buttom:focus {
   color: #cb935d;
   background: #fff;
 }
@@ -699,13 +704,14 @@ html {
   line-height: normal;
   letter-spacing: -0.48px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 5%;
+  border-radius: 4px;
   width: 170px;
   padding: 10px 10px;
-  background: #cb935d;
   margin-top: 20px;
+  background-color: #cb935d;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.experience-buttom:hover {
+.experience-buttom:hover, .experience-buttom:focus {
   color: #cb935d;
   background: #fff;
 }
@@ -790,13 +796,14 @@ html {
   line-height: normal;
   letter-spacing: -0.48px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 5%;
+  border-radius: 4px;
   width: 170px;
   padding: 10px 10px;
-  background: #cb935d;
   margin-bottom: 20px;
+  background-color: #cb935d;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-buttom:hover {
+.clients-buttom:hover, .clients-buttom:focus {
   color: #cb935d;
   background: #fff;
 }
@@ -883,6 +890,10 @@ html {
   padding: 70px;
 }
 
+.blog-page {
+  width: 300px;
+}
+
 .blog-title {
   color: #fff;
   text-align: center;
@@ -925,7 +936,8 @@ html {
 }
 
 .article {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -933,6 +945,7 @@ html {
   background-color: rgba(0, 0, 0, 0.7); /* фон для контраста */
   width: 100%;
   height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .article-text {
@@ -948,10 +961,14 @@ html {
 }
 
 .blog-item:hover .article {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
+  .blog-page {
+    width: 650px;
+  }
   .blog-list {
     flex-direction: row;
     gap: 20px;
@@ -967,6 +984,9 @@ html {
   }
 }
 @media screen and (min-width: 1024px) {
+  .blog-page {
+    width: 900px;
+  }
   .blog-item {
     width: 320px;
   }
@@ -975,6 +995,11 @@ html {
   }
   .blog-text {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-page {
+    width: 1100px;
   }
 }
 .gallery {
@@ -1086,8 +1111,9 @@ html {
   line-height: normal;
   margin-left: 30px;
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-title:hover {
+.footer-title:hover, .footer-title:focus {
   color: #cb935d;
 }
 
@@ -1100,8 +1126,9 @@ html {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-title_second:hover {
+.footer-title_second:hover, .footer-title_second:focus {
   color: #cb935d;
 }
 
@@ -1112,8 +1139,9 @@ html {
   font-style: italic;
   font-weight: 600;
   line-height: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-span:hover {
+.footer-span:hover, .footer-span:focus {
   color: #fff;
 }
 
@@ -1168,12 +1196,13 @@ html {
   line-height: normal;
   letter-spacing: -0.48px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 5%;
+  border-radius: 4px;
   width: 170px;
   padding: 10px 10px;
-  background: #cb935d;
+  background-color: #cb935d;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-buttom:hover {
+.footer-buttom:hover, .footer-buttom:focus {
   color: #cb935d;
   background: #fff;
 }
@@ -1230,7 +1259,7 @@ html {
 .modal {
   position: absolute;
   max-height: 90%;
-  width: 90%;
+  max-width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1253,6 +1282,10 @@ html {
   margin-top: 8px;
   margin-right: 8px;
   padding: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover, .modal-close:focus {
+  color: #cb935d;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1271,6 +1304,13 @@ html {
 }
 .form-list {
   padding: 20px;
+}
+
+.form {
+  width: 300px;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .form-title {
@@ -1292,7 +1332,7 @@ html {
 .form-label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .form-text {
@@ -1300,6 +1340,19 @@ html {
   font-family: "Cormorant Garamond";
   text-align: center;
   font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 10px;
+}
+
+.form-text-send {
+  width: 250px;
+  color: #000;
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1330,11 +1383,12 @@ html {
 
 .form-input {
   display: block;
-  width: 80%;
-  padding: 12px 42px;
+  width: 100%;
+  padding: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
 }
 
 .form-input:focus {
@@ -1343,19 +1397,24 @@ html {
 }
 
 .form-send__btn {
-  background: #2196f3;
+  color: #fff;
+  font-family: "Cormorant Garamond";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   border: none;
-  padding: 10px 55px;
-  color: #ffffff;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #cb935d;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-send__btn:hover, .form-send__btn:focus {
-  background-color: #188ce8;
+  color: #cb935d;
+  background: #fff;
 }
 
 .form-wrapper {
@@ -1372,31 +1431,30 @@ html {
   width: 200px;
 }
 
-.button {
-  color: #fff;
-  font-family: "Cormorant Garamond";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.48px;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background: #cb935d;
+@media screen and (min-width: 768px) {
+  .form {
+    width: 450px;
+  }
+  .form-text-send {
+    width: 350px;
+    font-size: 26px;
+  }
 }
-.button:hover {
-  color: #cb935d;
-  background: #fff;
-}
-
 @media screen and (min-width: 1024px) {
+  .form {
+    width: 650px;
+  }
   .form-title {
     font-size: 26px;
   }
   .form-text {
+    font-size: 22px;
+  }
+  .form-text-send {
+    width: 400px;
+    font-size: 30px;
+  }
+  .form-send__btn {
     font-size: 22px;
   }
   .form-item {
@@ -1407,13 +1465,20 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
+  .form {
+    max-width: 950px;
+  }
   .form-title {
     font-size: 32px;
   }
   .form-text {
     font-size: 27px;
   }
-  .button {
+  .form-text-send {
+    width: 450px;
+    font-size: 33px;
+  }
+  .form-send__btn {
     font-size: 32px;
   }
   .form-list {
@@ -1470,10 +1535,10 @@ html {
     margin-bottom: 15px;
     line-height: 0;
     border: none;
-    background-color: transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .mobile-menu-close:hover .mobile-menu-close__icon, .mobile-menu-close:focus .mobile-menu-close__icon {
-    fill: #2196f3;
+  .mobile-menu-close:hover, .mobile-menu-close:focus {
+    fill: white;
   }
   .mobile-menu-nav__link {
     font-family: "Cormorant Garamond";

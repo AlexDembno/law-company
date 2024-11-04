@@ -61,11 +61,11 @@
     margin-bottom: 15px;
     line-height: 0;
     border: none;
-    background-color: transparent;
-    // transition: color var(--transition-hover);
-    &:hover .mobile-menu-close__icon,
-    &:focus .mobile-menu-close__icon {
-      fill: #2196f3;
+    // background-color: transparent;s
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: white;
     }
   }
 

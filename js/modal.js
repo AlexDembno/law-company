@@ -8,96 +8,98 @@
     firstBlog: document.querySelector('.blog-first'),
     secondBlog: document.querySelector('.blog-second'),
     thirdBlog: document.querySelector('.blog-third'),
+    formSend: document.querySelector('.form-send__btn'),
   };
-
-  refs.openModalBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      refs.modal.classList.toggle('is-hidden');
-      const markup = ` <li>
-              <h4 class="form-title" id="contactFooter">Зв'язатися зараз</h4>
-            </li>
-            <li class="form-item">
-              <p class="form-text" id="adress">
-                Бізнес-центр Приморський, вул. Велика Арнаутська, 17, Одеса,
-                Україна
-              </p>
-            </li>
-            <li class="form-item">
-              <p class="form-text">+38 097 111 11 111</p>
-            </li>
-            <li class="form-item">
-              <p class="form-text">lawcompany911@gmail.com</p>
-            </li>`;
-      refs.list.insertAdjacentHTML('beforeend', markup);
-    });
-  });
 
   // refs.openModalBtns.forEach(btn => {
   //   btn.addEventListener('click', () => {
   //     refs.modal.classList.toggle('is-hidden');
-  //     const markup = `<form class="form">
-  //       <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-  //         <label class="form-label">
-  //           <span class="form-text">Имя</span>
-  //           <span class="form-wrapper">
-  //             <input
-  //               class="form-input"
-  //               type="text"
-  //               name="user_name"
-  //               pattern="[a-zA-Zа-яА-Я]+"
-  //               minlength="2"
-  //               autofocus
-  //             />
-  //           </span>
-  //         </label>
-  //         <label class="form-label">
-  //           <span class="form-text">Телефон</span>
-  //           <span class="form-wrapper">
-  //             <input
-  //               class="form-input"
-  //               type="tel"
-  //               name="user_phone"
-  //               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-  //               title="xxx-xxx-xx-xx"
-  //             />
-  //           </span>
-  //         </label>
-  //         <label class="form-label">
-  //           <span class="form-text">Почта</span>
-  //           <span class="form-wrapper">
-  //             <input class="form-input" type="email" name="user_email" />
-  //           </span>
-  //         </label>
-  //         <label class="form-label">
-  //           <span class="form-text">Комментарий</span>
-  //           <textarea
-  //             class="form-comment"
-  //             name="user_comment"
-  //             placeholder="Введите текст"
-  //           ></textarea>
-  //         </label>
-
-  //         <span class="span">
-  //           <label class="form-check">
-  //             <input
-  //               class="form-check_input"
-  //               type="checkbox"
-  //               name="user-agree"
-  //             />
-  //             <span class="form-check_nocheck"></span>
-  //             <span class="form-check_text"
-  //               >Соглашаюсь с рассылкой и принимаю
-  //               <a href="#">Условия договора</a>
-  //             </span>
-  //           </label>
-  //         </span>
-
-  //         <div class="form-send">
-  //           <button class="form-button" type="submit">Отправить</button>
-  //         </div>
-  //       </form>`;
+  //     const markup = ` <li>
+  //             <h4 class="form-title" id="contactFooter">Зв'язатися зараз</h4>
+  //           </li>
+  //           <li class="form-item">
+  //             <p class="form-text" id="adress">
+  //               Бізнес-центр Приморський, вул. Велика Арнаутська, 17, Одеса,
+  //               Україна
+  //             </p>
+  //           </li>
+  //           <li class="form-item">
+  //             <p class="form-text">+38 097 111 11 111</p>
+  //           </li>
+  //           <li class="form-item">
+  //             <p class="form-text">lawcompany911@gmail.com</p>
+  //           </li>`;
   //     refs.list.insertAdjacentHTML('beforeend', markup);
   //   });
+  // });
+
+  refs.openModalBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      refs.modal.classList.toggle('is-hidden');
+      const markup = `<form class="form">
+        <p class="form-title">Залишіть свої дані, ми вам передзвонимо</p>
+          <label class="form-label">
+            <span class="form-text">Ім'я</span>
+            <span class="form-wrapper">
+              <input
+                class="form-input"
+                type="text"
+                name="user_name"
+                pattern="[a-zA-Zа-яА-Я]+"
+                minlength="2"
+                required
+              />
+            </span>
+          </label>
+          <label class="form-label">
+            <span class="form-text">Телефон</span>
+            <span class="form-wrapper">
+              <input
+                class="form-input"
+                type="tel"
+                name="user_phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                 required
+              />
+            </span>
+          </label>
+          <label class="form-label">
+            <span class="form-text">Пошта</span>
+            <span class="form-wrapper">
+              <input class="form-input" type="email" name="user_email" />
+            </span>
+          </label>
+
+          <div class="form-send">
+            <button class="form-send__btn" type="submit">Надіслати</button>
+          </div>
+        </form>`;
+      refs.list.innerHTML = markup;
+
+      const form = refs.list.querySelector('.form');
+
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const data = {
+          name: formData.get('user_name'),
+          phone: formData.get('user_phone'),
+          email: formData.get('user_email'),
+        };
+
+        console.log(data);
+        refs.list.innerHTML = `<p class="form-text-send">Ваші дані надіслано. Найближчим часом ми зв'яжемося з вами.</p>`;
+      });
+    });
+  });
+
+  // formSend.addEventListener('click', () => {
+  //   console.log('Надіслано');
+
+  //   // refs.modal.classList.toggle('is-hidden');
+  //   const markup = "Ваші дані надіслано. Найближчим часом ми зв'яжемося з вами";
+  //   refs.list.insertAdjacentHTML('beforeend', markup);
   // });
 
   document.querySelectorAll('.blog-item').forEach((item, index) => {
@@ -107,7 +109,7 @@
       // В зависимости от индекса или класса элемента выполняем действия
       if (item.classList.contains('blog-first')) {
         console.log('Клик на первой статье');
-        markup = `<h3 class="blogPage-title">
+        markup = `<div class="blog-page"><h3 class="blogPage-title">
         Вибір адвоката — це важливий крок для забезпечення захисту ваших прав і
         інтересів.
       </h3>
@@ -129,10 +131,10 @@
       </p>
 <p class="blogPage-text">
        Вартість послуг: Запитайте про структуру оплати: фіксована плата, погодинна оплата чи успішна винагорода. Переконайтеся, що ви розумієте всі витрати і що вони відповідають вашим фінансовим можливостям.
-      </p>`;
+      </p></div>`;
       } else if (item.classList.contains('blog-second')) {
         console.log('Клик на второй статье');
-        markup = `<h3 class="blogPage-title">
+        markup = `<div class="blog-page"><h3 class="blogPage-title">
         Трудовий договір — це основний документ, що регулює відносини між працівником та роботодавцем. Ось основні права і обов'язки, які варто знати:
       </h3>
        <p class="blogPage-text">
@@ -149,10 +151,10 @@
       </p>
  <p class="blogPage-text">
        Для складання трудового договору важливо врахувати інтереси обох сторін, включаючи деталі щодо заробітної плати, умов праці, прав і обов'язків.
-      </p>`;
+      </p></div>`;
       } else if (item.classList.contains('blog-third')) {
         console.log('Клик на третьей статье');
-        markup = `<h3 class="blogPage-title">
+        markup = `<div class="blog-page"><h3 class="blogPage-title">
         Сімейні спори можуть бути складними і емоційно виснажливими. Ось кілька практичних порад щодо захисту ваших прав:
       </h3>
  <p class="blogPage-text">
@@ -169,7 +171,7 @@
       </p>
 <p class="blogPage-text">
       Переговори: Спробуйте вирішити спір мирним шляхом через переговори або медіацію. Це допоможе уникнути судових процесів і зберегти хороші відносини.
-      </p>`;
+      </p></div>`;
       }
       refs.list.insertAdjacentHTML('beforeend', markup);
     });
