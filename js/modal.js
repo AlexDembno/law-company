@@ -54,13 +54,12 @@
           <label class="form-label">
             <span class="form-text">Телефон</span>
             <span class="form-wrapper">
-              <input
-                class="form-input"
-                type="tel"
-                name="user_phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
-                 required
+          <input
+              class="form-input"
+              type="tel"
+              name="user_phone"
+              required
+              inputmode="numeric"  
               />
             </span>
           </label>
@@ -81,6 +80,7 @@
 
       form.addEventListener('submit', event => {
         event.preventDefault();
+
         const formData = new FormData(form);
         const data = {
           name: formData.get('user_name'),
@@ -88,8 +88,24 @@
           email: formData.get('user_email'),
         };
 
-        console.log(data);
         refs.list.innerHTML = `<p class="form-text-send">Ваші дані надіслано. Найближчим часом ми зв'яжемося з вами.</p>`;
+
+        fetch('https://lawcompanyback.onrender.com/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Ошибка отправки данных');
+            }
+            return response.text();
+          })
+          .catch(error => {
+            console.error('Ошибка:', error);
+          });
       });
     });
   });
