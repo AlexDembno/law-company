@@ -1,0 +1,83 @@
+.policy {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.policy-title {
+  color: #000;
+
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 29px;
+}
+
+.policy-subtitle {
+  color: #000;
+
+  font-family: 'Cormorant Garamond';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 10px;
+}
+.policy-text {
+  color: #000;
+
+  font-family: 'Cormorant Garamond';
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .policy-title {
+    font-size: 25px;
+  }
+  .policy-subtitle {
+    font-size: 22px;
+  }
+  .policy-text {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .policy {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .policy-title {
+    font-size: 27px;
+  }
+  .policy-subtitle {
+    font-size: 25px;
+  }
+  .policy-text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .policy-title {
+    font-size: 36px;
+  }
+  .policy-subtitle {
+    font-size: 32px;
+  }
+  .policy-text {
+    font-size: 28px;
+  }
+}

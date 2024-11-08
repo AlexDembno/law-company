@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Тег title: основное название страницы, которое будет отображаться в результатах поиска -->
+    <title>
+      Юридична компанія в Україні - Юридичні послуги та консультації
+    </title>
+
+    <!-- Мета-тег description: краткое описание страницы, отображается под заголовком в поисковой выдаче -->
+    <meta
+      name="description"
+      content="Юридична компанія, що надає послуги з консультацій, правової підтримки та представництва в Україні. Дізнайтеся більше про наші послуги."
+    />
+
+    <!-- Мета-тег keywords: ключевые слова для поисковых систем -->
+    <meta
+      name="keywords"
+      content="юридична компанія, юридичні послуги, правова допомога, адвокат, консультації, Україна"
+    />
     <title>Law Compant 911</title>
     <link rel="icon" type="image/png" href="./images/hero/pngwing 1.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -168,9 +188,9 @@
       </section>
       <section id="practice" class="section practice">
         <div class="practice-box container">
-          <h3 class="practice-title" id="practiceAreas">
+          <h2 class="practice-title" id="practiceAreas">
             Наші сфери діяльності
-          </h3>
+          </h2>
           <p class="practice-text" id="practicetext">
             Ми надаємо професійну допомогу в різних галузях права, забезпечуючи
             захист ваших прав та інтересів. Наші адвокати мають багаторічний
@@ -210,9 +230,9 @@
       </section>
       <section id="about" class="section aboutUs">
         <div class="container">
-          <h3 class="aboutUs-title" id="advocates">
+          <h2 class="aboutUs-title" id="advocates">
             Ми прихильники справедливості та права
-          </h3>
+          </h2>
           <p class="aboutUs-text" id="believe">
             Ми віримо, що справедливість і право повинні бути доступними
             кожному. Наша команда працює над тим, щоб забезпечити ефективний
@@ -250,12 +270,12 @@
           alt="law"
         />
         <div class="experience-box">
-          <h3 class="experience-title" id="let">
+          <h2 class="experience-title" id="let">
             Нехай наш досвід
             <span class="experience-span" id="guide"
               >стане вашим путівником</span
             >
-          </h3>
+          </h2>
           <p class="experience-text" id="experience1">
             У світі юридичних складнощів важливо мати надійного партнера, який
             знає, як досягти успіху. Наша команда фахівців готова поділитися
@@ -299,7 +319,7 @@
       <section class="section clients">
         <div class="container clients-box">
           <div class="clients-box_title">
-            <h3 class="clients-title" id="clients">Що говорять наші клієнти</h3>
+            <h2 class="clients-title" id="clients">Що говорять наші клієнти</h2>
             <button class="clients-buttom" type="button" data-buton id="button">
               Зв'яжіться з нами
             </button>
@@ -400,7 +420,7 @@
       </section>
 
       <section id="blog" class="section blog container">
-        <h3 class="blog-title" id="materials">Корисні матеріали</h3>
+        <h2 class="blog-title" id="materials">Корисні матеріали</h2>
         <ul class="blog-list">
           <li class="blog-item blog-first">
             <div class="blog-wrapper">
@@ -455,7 +475,7 @@
 
       <section class="section gallery">
         <div class="container">
-          <h3 class="gallery-title" id="gallery">Галерея</h3>
+          <h2 class="gallery-title" id="gallery">Галерея</h2>
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -667,8 +687,8 @@
               />
               <span class="form-check_nocheck"></span>
               <span class="form-check_text"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="#">Условия договора</a>
+                >Я згоден на обробку моїх персональних даних відповідно до 
+                <a href="#">Політики конфіденційності.</a>
               </span>
             </label>
           </span>
@@ -685,5 +705,25 @@
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/blogModal.js" type="module"></script>
     <script src="./js/swiper.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: { background: '#1f3044', text: '#ffffff' }, // Цвет фона окна
+            button: { background: '#cb935d', text: '#ffffff' }, // Цвет кнопки
+          },
+          theme: 'classic', // Тема (можно менять на 'classic', 'edgeless', 'block')
+          position: 'bottom', // Позиция уведомления: 'bottom', 'top', 'bottom-left', 'bottom-right'
+          content: {
+            message:
+              'Цей сайт використовує cookie для покращення вашого досвіду.',
+            dismiss: 'Прийняти',
+            link: 'Детальніше',
+            href: '/policyPage.html',
+          },
+        });
+      });
+    </script>
   </body>
 </html>

@@ -69,11 +69,26 @@
               <input class="form-input" type="email" name="user_email" />
             </span>
           </label>
+          <span class="span">
+            <label class="form-check">
+              <input
+                class="form-check_input"
+                type="checkbox"
+                name="user_agree"
+                required
+              />
+              <span class="form-check_text"
+                >Я згоден на обробку моїх персональних даних відповідно до 
+                <a class="form-link" href="/policyPage.html">Політики конфіденційності</a>
+              </span>
+            </label>
+          </span>
 
           <div class="form-send">
             <button class="form-send__btn" type="submit">Надіслати</button>
           </div>
         </form>`;
+
       refs.list.innerHTML = markup;
 
       const form = refs.list.querySelector('.form');
@@ -86,6 +101,7 @@
           name: formData.get('user_name'),
           phone: formData.get('user_phone'),
           email: formData.get('user_email'),
+          agree: formData.get('user_agree'),
         };
 
         refs.list.innerHTML = `<p class="form-text-send">Ваші дані надіслано. Найближчим часом ми зв'яжемося з вами.</p>`;
