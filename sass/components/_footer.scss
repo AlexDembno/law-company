@@ -23,17 +23,20 @@
 
 .footer-phone,
 .footer-email {
-  color: #cb935d;
+  color: #cb935d !important;
   font-family: 'Cormorant Garamond';
   font-size: 25px;
   // font-style: italic;
   font-weight: 600;
   line-height: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
+}
+
+.footer-phone:hover,
+.footer-phone:focus,
+.footer-email:hover,
+.footer-email:focus {
+  color: #fff !important;
 }
 
 .footer-title_second {
@@ -130,6 +133,7 @@
   padding: 10px 10px;
   background-color: #cb935d;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
   &:hover,
   &:focus {
     color: #cb935d;
